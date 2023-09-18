@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import url('styles/header.css');
+@import url('styles/home.css');
+@import url('styles/aboutme.css');
+@import url('styles/myservices.css');
+@import url('styles/mywork.css');
+@import url('styles/contactme.css');
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: var(--fonte-padrao);
+  scroll-behavior: smooth;
+  border: solid 1px red;
+}
+
+a:any-link {
+  color: white;
+  text-decoration: none;
+}
+
+:root{
+  --fonte-logo: 'Kalam', cursive;
+  --fonte-textodecorado: 'Lobster', cursive;
+  --fonte-padrao: 'Montserrat', sans-serif;
+  --cor-azul: #8cbcea;
+  --cor-rosa: #f50dbb;
+}
+
+body{
+  font-size: 100%;
+  width: 100%;
+  background-color: #111111;
+}
+
+footer{
+  height: 10vh;
+  width: 100%;
+  border-top: solid 0.1em white;
+  background-color: #222222;
+}
+
+/* ---------------página inicial----------------- */
+
+
+
+/* -------------------------------About me------------------------------- */
+
+
+
+/* -----------------------------My Services------------------------------ */
+
+
+
+/* ----------------MyWork---------------- */
+
+
+
+
+
+
+/* -------------------------responsivo---------------------- */
+
+@media screen and ( min-width:768px) and (max-width: 880px){
+
+}
+
+@media screen and (max-width: 768px){
+
+}

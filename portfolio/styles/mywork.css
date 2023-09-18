@@ -1,0 +1,135 @@
+.MyWork{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  height: 100vh;
+  border-bottom: solid 0.1em white;
+  background-color: #1c1c1c;
+}
+
+.MyWork h1{
+  margin-bottom: 5vh;
+  font-size: 3rem;
+  width: 69vw;
+  margin-top: -10vh;
+  margin-bottom: 5vh;
+  margin-right: 10vw;
+  text-align: start;
+}
+
+.MyWork ul{
+  display: flex;
+  flex-flow: row;
+  overflow: hidden;
+}
+
+.MyWork ul li {
+  display: flex;
+  flex-flow: column;
+  width: 15vw;
+  min-width: 22vw;
+  height: 50vh;
+  max-width: 30vh;
+  background-color: #222222;
+  align-items: end;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 3%;
+}
+.MyWork ul li p{
+  color: WHITE;
+}
+
+.MyWork a {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  justify-content: end;
+  align-items: end;
+  overflow: hidden;
+}
+
+.MyWork ul li:hover img{
+  transform: scale(1.2);
+  filter: blur(1px);
+  filter: brightness(0.6)
+  
+}
+
+.MyWork img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+}
+
+.layer{
+  display: flex;
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0), #8cbdea90, #8cbdeabd);
+  overflow: hidden;
+  width: 100%;
+  height: 0%;
+  background-size: 100%;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: 0 0.2em;
+  text-align: center;
+  align-items: center;
+  z-index: 0;
+  transition: 0.5s;
+}
+
+.MyWork ul li:hover .layer{
+  height: 70%;
+}
+
+.SeeMore{
+  display: block;
+  margin-top: 3vh;
+  font-size: 1.3rem;
+  border-radius: 1em;
+  color: white;
+  padding: 2vh 6vw;
+  background-color: #222222;
+  border: solid 0.1em var(--cor-azul);
+  cursor: pointer;
+  transition: 1s;
+  align-items: center;
+  justify-content: center;
+}
+
+.text1{
+  display: flex;
+}
+
+.text2{
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  .MyWork h1 {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+
+  .SeeMore{
+    font-size: 0.6rem;
+    padding: 1vh 4vw;
+  }
+
+  .text1{
+    display: flex;
+    font-size: 0.6rem;
+  }
+
+  .text2{
+    display: none;
+  }
+
+}

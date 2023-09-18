@@ -1,0 +1,106 @@
+.MyServices{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  border-bottom: solid 0.1em white;
+  padding: 1em;
+}
+
+.MyServices h1{
+  position: relative;
+  font-size: 3rem;
+  width: 69vw;
+  margin-top: -10vh;
+  margin-bottom: 5vh;
+  margin-right: 10vw;
+  text-align: start;
+}
+
+.services_grupo{
+  display: flex;
+  height: fit-content;
+  gap: 5vw;
+}
+
+.services{
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 25vw;
+  height: 5vh * 5vw;
+  background-color: #222222;
+  padding: 2.5vw;
+  gap: 3vh;
+  border-radius: 3%;
+  transition: 1s;
+}
+
+.services:hover{
+  background-color: var(--cor-azul);
+}
+
+.services_texto{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1vh;
+}
+
+.services_texto h2{
+  display: flex;
+  font-size: 1.4rem;
+}
+
+.services_texto p{
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.icon_services{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px){
+
+  .services{
+    max-width: 30vw;
+  }
+
+  .services_texto h2{
+    display: flex;
+    font-size: 0.7rem;
+  }
+  
+  .icon_services{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .services_texto p{
+    display: flex;
+    font-size: 0.6rem;
+  }
+
+  .services_grupo{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 5vw;
+  }
+
+  .MyServices h1{
+    position: relative;
+    font-size: 2rem;
+    width: 69vw;
+    text-align: start;
+    margin-top: 0;
+  }
+  
+}
