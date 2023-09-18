@@ -14,7 +14,6 @@
   box-sizing: border-box;
   font-family: var(--fonte-padrao);
   scroll-behavior: smooth;
-  border: solid 1px red;
 }
 
 a:any-link {
